@@ -1,0 +1,23 @@
+// Specifies the repositories to use for plugin resolution
+pluginManagement {
+    repositories {
+        gradlePluginPortal() // Default plugin repository
+        google() // Google's Maven repository for Android plugins
+        mavenCentral() // Central Maven repository
+    }
+}
+
+// Configures the repositories for resolving dependencies
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) // Fail if there are repositories in projects
+    repositories {
+        google() // Google's Maven repository for Android dependencies
+        mavenCentral() // Central Maven repository
+    }
+}
+
+// Sets the name of the root project
+rootProject.name = "InTech"
+
+// Includes the ':app' module in the build
+include ':app'

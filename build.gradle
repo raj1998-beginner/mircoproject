@@ -1,0 +1,18 @@
+// Project-level build.gradle (usually located at <root>/build.gradle)
+buildscript {
+    repositories {
+        google() // Required for Firebase and Google services plugin
+        mavenCentral()
+    }
+    dependencies {
+       // classpath 'com.android.tools.build:gradle:7.3.1' // Ensure this is the version you want
+        classpath 'com.google.gms:google-services:4.3.15' // Required for Google services
+        classpath 'com.android.tools.build:gradle:7.0.0'  // Replace with the correct version
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.0.2' apply false
+    id 'com.android.library' version '7.0.2' apply false
+}
+
